@@ -148,6 +148,7 @@ uint32_t scan_owe_hidden(uint64_t wdev_id, struct l_queue *list,
 			void *userdata, scan_destroy_func_t destroy);
 bool scan_cancel(uint64_t wdev_id, uint32_t id);
 
+bool scan_active_is_enabled(void);
 void scan_periodic_start(uint64_t wdev_id, scan_trigger_func_t trigger,
 				scan_notify_func_t func, void *userdata);
 bool scan_periodic_stop(uint64_t wdev_id);

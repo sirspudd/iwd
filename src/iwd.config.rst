@@ -318,6 +318,16 @@ No modification from defaults is normally required.
    :widths: 20 80
    :align: left
 
+   * - EnableActiveScanning
+     - Values: true, **false**
+
+       Passive scanning consumes less power and provides privacy. That said, as
+       per Meraki: "A single band 2.4GHz wireless client that employs passive scanning
+       may not be able to detect the wireless network with Band Steering enabled
+       because the beacon frames do not advertise the wireless network."
+
+       Active scanning is disabled by default.
+
    * - DisablePeriodicScan
      - Values: true, **false**
 

@@ -1280,7 +1280,7 @@ static uint32_t station_scan_trigger(struct station *station,
 	params.flush = true;
 	params.freqs = freqs;
 
-	if (wiphy_can_randomize_mac_addr(station->wiphy) ||
+	if (scan_active_is_enabled() || wiphy_can_randomize_mac_addr(station->wiphy) ||
 			station->connected_bss ||
 				station_needs_hidden_network_scan(station)) {
 		/* If we're connected, HW cannot randomize our MAC */
